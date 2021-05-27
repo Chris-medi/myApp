@@ -1,0 +1,23 @@
+<section>
+    <form  class="md-3 p-5 d-flex justify-content-center flex-column" >
+        <label for="placa" class="form-file">Placa</label>
+        <input class="form-control" type="number" name="placa" id="placa" [(ngModel)]="newCarro.placa">
+
+        <label for="marca" class="form-file mt-3">Marca</label>
+        <input  class="form-control" type="text" name="marca" id="marca" [(ngModel)]="newCarro.marca">
+
+        <label for="modelo" class="form-file mt-3">Modelo</label>
+        <input  class="form-control" type="text" name="modelo" id="modelo" [(ngModel)]="newCarro.modelo">
+
+        <label for="nameClient" class="form-file mt-3">Nombre del Cliente</label>
+        <input  class="form-control" type="text" name="Cliente" id="nameClient" [(ngModel)]="newCarro.nombreCliente">
+
+        <label for="numberCliente" class="form-file mt-3">Celular del Cliente</label>
+        <input class="form-control" type="number" name="Number" id="numberCliente" [(ngModel)]="newCarro.celularCliente">
+
+        <label for="Ingreso" class="form-file mt-3">Dia de Ingreso</label>
+        <input  class="form-control" type="date" name="ingreso" id="Ingreso" [(ngModel)]="newCarro.diaIngreso">
+        <button  class=" m-3 btn btn-primary" (click)="addCarro()" >Agregar</button>
+    </form>
+
+</section>

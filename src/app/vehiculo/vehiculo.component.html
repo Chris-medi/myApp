@@ -1,0 +1,44 @@
+<section>
+
+    <table class="table m-3">
+        <thead>
+            <tr>
+                <th scope="col">Placa</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Nombre del cliente</th>
+                <th scope="col">Celular del Cliente</th>
+                <th scope="col">Dias de ingreso</th>
+                <th scope="col">Dia de Egreso</th>
+                <th scope="col">Semaforo</th>
+                <th scope="col">Modificar Egreso </th>
+            </tr>
+        </thead>
+        <tr *ngFor="let carro of carros">
+            <td>{{carro}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                
+
+            </td>
+            <td>
+                <button class="btn btn-danger">Modificar  </button>
+            </td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-center max-auto">
+        <button class="btn btn-primary m-0" (click)="mostrar()">Agregar</button>
+    </div>
+
+        <div *ngIf="show">
+            <app-formulario></app-formulario>
+        </div>
+
+
+
+</section>
